@@ -140,3 +140,12 @@ client.on('message',async Epic => {
   }
 });
 
+
+
+
+
+
+
+
+client.login(process.env.BOT_TOKEN);
+
