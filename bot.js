@@ -535,7 +535,7 @@ message.channel.send(`Successfully changed **${user}** nickname to **${nick}**`)
 
 
 client.on("message", message => {
-    if (message.content === "-help") {
+    if (message.content === "$help") {
      const embed = new Discord.RichEmbed() 
          .setColor("#FFFF00")
          .setDescription(`**:video_game:   الالعاب|Games**
