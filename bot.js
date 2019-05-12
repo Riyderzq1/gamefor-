@@ -145,6 +145,305 @@ client.on('message',async Epic => {
 
 
 
+client.on('message', message => {
+    if (message.content.startsWith("$hack")) {
+        if(!message.author.id === '') return;
+      if (message.author.bot) return
+           message.delete();
+             let args = message.content.split(' ').slice(1);
+ 
+                   let virusname = args.join(' ');
+                 if (virusname < 1) {
+                     return message.channel.send("```اكتب اسم الشخص الي تبي يتهكر```");
+                 }
+                 message.channel.send({embed: new Discord.RichEmbed().setTitle('Loading ' + virusname + "...").setColor(0xFF0000)}).then(function(m) {
+             setTimeout(function() {
+               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Loading Discord Virus [▓ ] 1%').setColor(0xFF0000)})
+             }, 1000)
+             setTimeout(function() {
+               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Loading Discord Virus [▓▓ ] 2%').setColor(0xFF0000)})
+             }, 2000)
+               setTimeout(function() {
+               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Loading Discord Virus [▓▓▓ ] 3%').setColor(0xFF0000)})
+             }, 3000)
+             setTimeout(function() {
+               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Loading Discord Virus [▓▓▓▓ ] 4%').setColor(0xFF0000)})
+             }, 4000)
+               setTimeout(function() {
+               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Loading Discord Virus [▓▓▓▓▓▓▓▓▓▓▓▓ ] 28%').setColor(0xFF0000)})
+             }, 5000)
+               setTimeout(function() {
+               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Loading Discord Virus [▓▓▓▓▓▓▓▓▓▓▓▓▓ ] 35%').setColor(0xFF0000)})
+             }, 6000)
+               setTimeout(function() {
+               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Loading Discord Virus [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ] 78%').setColor(0xFF0000)})
+             }, 7000)
+               setTimeout(function() {
+               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Loading Discord Virus [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ] 80%').setColor(0xFF0000)})
+             }, 8000)
+               setTimeout(function() {
+               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Loading Discord Virus [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ] 86%').setColor(0xFF0000)})
+             }, 9000)
+                setTimeout(function() {
+               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Loading Discord Virus [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ] 89%').setColor(0xFF0000)})
+             }, 10000)
+                setTimeout(function() {
+               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Loading Discord Virus [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ] 90%').setColor(0xFF0000)})
+             }, 11000)
+                setTimeout(function() {
+               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Loading Discord Virus [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ] 95%').setColor(0xFF0000)})
+             }, 12000)
+                setTimeout(function() {
+               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Loading Discord Virus [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ] 96%').setColor(0xFF0000)})
+             }, 13000)
+                setTimeout(function() {
+               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Loading Discord Virus [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ] 97%').setColor(0xFF0000)})
+             }, 14000)
+                setTimeout(function() {
+               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Loading Discord Virus [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓] 98%').setColor(0xFF0000)})
+             }, 15000)
+                setTimeout(function() {
+               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Loading Discord Virus [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓���▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ] 99%').setColor(0xFF0000)})
+             }, 16000)
+                setTimeout(function() {
+               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Loading Discord Virus [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓] 100%').setColor(0xFF0000)})
+             }, 17000)
+             setTimeout(function() {
+               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']:' + virusname + 'done it\'s going good 100.9%').setColor(0xFF0000)})
+             }, 18000)
+                setTimeout(function() {
+               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: hacking yeah i love it').setColor(0xFF0000)})
+             }, 19000)
+               setTimeout(function() {
+               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: uploading data' + virusname + ".key").setColor(0xFF0000)})
+             }, 22000)
+               setTimeout(function() {
+               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Uploaded! Initiating explosion in 5...').setColor(0xFF0000)})
+             }, 25000)
+               setTimeout(function() {
+               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Uploaded! Initiating explosion in 4...').setColor(0xFF0000)})
+             }, 26000)
+                setTimeout(function() {
+               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Uploaded! Initiating explosion in 3...').setColor(0xFF0000)})
+             }, 27000)
+                setTimeout(function() {
+               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Uploaded! Initiating explosion in 2...').setColor(0xFF0000)})
+             }, 28000)
+                setTimeout(function() {
+               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: Uploaded! Initiating explosion in 1...').setColor(0xFF0000)})
+             }, 29000)
+             setTimeout(function() {
+               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓] 99%').setColor(0xFF0000)})
+           }, 30000)
+              setTimeout(function() {
+               m.edit({embed: new Discord.RichEmbed().setTitle('[' + virusname + ']: ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓]100% virus added').setColor(0xFF0000)})
+           }, 31000)
+              setTimeout(function() {
+               m.delete()
+           }, 32000)
+             setTimeout(function() {
+               message.channel.send('تم تهكيرك')
+           }, 33000)
+           });
+         }
+ })
+
+
+
+
+
+ client.on('message', message => {
+   var prefix = "$" ;
+if(message.content.split(' ')[0] == '$srh'){  
+       if (message.author.bot) return;
+     if(!message.channel.guild) return;
+                       
+let args = message.content.split(' ').slice(1).join(' ');
+let arg = message.content.split(' ').slice(2).join(' ');
+if(!args) return message.reply ("**Mention A member please** :dove: ");
+  if(!arg) return message.reply ("**Write A Message** :dove: ");
+ 
+ 
+ 
+ 
+ var user = message.mentions.users.first();
+ 
+       
+        if(user === message.author) return;
+          let em  = new Discord.RichEmbed()
+.setAuthor("Sarahah", "https://upload.wikimedia.org/wikipedia/en/thumb/9/94/Sarahah_logo.png/250px-Sarahah_logo.png")
+.addField("◆ Msg : " , arg)
+ 
+ .setThumbnail("https://upload.wikimedia.org/wikipedia/en/thumb/9/94/Sarahah_logo.png/250px-Sarahah_logo.png")
+                 message.delete()                                    
+client.guilds.get(message.guild.id).members.get(user.id).sendEmbed(em)
+           
+ 
+ let embed = new Discord.RichEmbed()
+ .setAuthor("Sarahah", "https://upload.wikimedia.org/wikipedia/en/thumb/9/94/Sarahah_logo.png/250px-Sarahah_logo.png")
+ .setDescription(':dove: شكرا لصراحتك')
+ .setColor("10bbb3")
+.setThumbnail("https://upload.wikimedia.org/wikipedia/en/thumb/9/94/Sarahah_logo.png/250px-Sarahah_logo.png")
+  message.channel.sendEmbed(embed);
+}
+});
+ 
+ 
+client.on('message', message => {
+ 
+if(message.content.split(' ')[0] == '$srh1'){
+       if (message.author.bot) return;
+     if(!message.channel.guild) return;
+                       
+let args = message.content.split(' ').slice(1).join(' ');
+let arg = message.content.split(' ').slice(2).join(' ');
+if(!args) return message.reply ("**Mention A member please** :dove: ");
+  if(!arg) return message.reply ("**Write A Message** :dove: ");
+ 
+ 
+ 
+ 
+ var user = message.mentions.users.first();
+ 
+       
+        if(user === message.author) return;
+          let e  = new Discord.RichEmbed()
+.setAuthor("Sarahah", "https://upload.wikimedia.org/wikipedia/en/thumb/9/94/Sarahah_logo.png/250px-Sarahah_logo.png")
+.addField("◆ Sent By :" , message.author.tag)
+.addField("◆ Msg : " , arg)
+ 
+ .setThumbnail("https://upload.wikimedia.org/wikipedia/en/thumb/9/94/Sarahah_logo.png/250px-Sarahah_logo.png")
+    message.delete()                                          
+client.guilds.get(message.guild.id).members.get(user.id).sendEmbed(e)
+                                 
+ 
+ 
+ 
+ let embed = new Discord.RichEmbed()
+ .setAuthor("Sarahah", "https://upload.wikimedia.org/wikipedia/en/thumb/9/94/Sarahah_logo.png/250px-Sarahah_logo.png")
+ .setDescription(':dove: شكرا لصراحتك')
+ .setColor("10bbb3")
+.setThumbnail("https://upload.wikimedia.org/wikipedia/en/thumb/9/94/Sarahah_logo.png/250px-Sarahah_logo.png")
+  message.channel.sendEmbed(embed);
+}
+});
+ 
+ 
+ 
+client.on('message', message => {
+ 
+if(message.content.split(' ')[0] == '$sr7'){
+       if (message.author.bot) return;
+     if(!message.channel.guild) return;
+                       if(user === message.author) return;  
+let args = message.content.split(' ').slice(1).join(' ');
+let arg = message.content.split(' ').slice(2).join(' ');
+if(!user) return message.reply ("**Mention A member please** :dove: ");
+  if(!arg) return message.reply ("**Write A Message** :dove: ");
+ 
+ 
+ 
+ var user = message.mentions.users.first();
+ 
+       
+     
+ 
+const w = ['./Toxic™/img/sarahah.png'];
+var Canvas = require('canvas')
+var jimp = require('jimp')
+ 
+             
+        let Image = Canvas.Image,
+            canvas = new Canvas(500, 500),
+            ctx = canvas.getContext('2d');
+        ctx.patternQuality = 'bilinear';
+        ctx.filter = 'bilinear';
+        ctx.antialias = 'subpixel';
+ 
+        fs.readFile(`${w[Math.floor(Math.random() * w.length)]}`, function (err, Background) {
+            if (err) return console.log(err);
+            let BG = Canvas.Image;
+            let ground = new Image;
+            ground.src = Background;
+            ctx.drawImage(ground, 0, 0, 500, 500);
+ 
+})
+ 
+ 
+                let url = message.author.displayAvatarURL.endsWith(".webp") ? message.author.displayAvatarURL.slice(20, 20) + ".png" : message.author.displayAvatarURL;
+                jimp.read(url, (err, ava) => {
+                    if (err) return console.log(err);
+                    ava.getBuffer(jimp.MIME_PNG, (err, buf) => {
+                        if (err) return console.log(err);
+ 
+                        let Avatar = Canvas.Image;
+                        let ava = new Avatar;
+                        ava.src = buf;
+                        ctx.drawImage(ava, -100 , -100, 70, 70);
+                                             
+   
+                       
+                 
+                     
+                        ctx.font = 'Bold 28px Arial ';
+                        ctx.fontSize = '28px';
+                        ctx.fillStyle = "#000000";
+                        ctx.textAlign = "center";
+                        ctx.fillText(arg, 242 , 201 );
+ 
+ 
+ 
+ 
+ 
+            // when someone calls this command, it also adds 1 earlier at the same, but since this is fetching the previous value, we need to add 1 to the answer, even thought it will be updated
+            // seconds after this.
+   
+ 
+    message.delete()                                          
+client.guilds.get(message.guild.id).members.get(user.id).sendFile(canvas.toBuffer())
+                                 
+     })
+    })
+ 
+ 
+ 
+ 
+ let embed = new Discord.RichEmbed()
+ .setAuthor("Sarahah", "https://upload.wikimedia.org/wikipedia/en/thumb/9/94/Sarahah_logo.png/250px-Sarahah_logo.png")
+ .setDescription(':dove: شكرا لصراحتك')
+ .setColor("10bbb3")
+.setThumbnail("https://upload.wikimedia.org/wikipedia/en/thumb/9/94/Sarahah_logo.png/250px-Sarahah_logo.png")
+  message.channel.sendEmbed(embed);
+}
+});
+ 
+ 
+ 
+client.on('message', message => {
+     if (message.content === "$sarahah") {
+           if(!message.channel.guild) return message.reply('** This command only for servers**');
+ const embed = new Discord.RichEmbed()
+         .setDescription(`** 「:dove: | SARAHAH COMMANDS」**`)
+         .addField("`$sr7`",
+         "  لارسال صراحة بالصورة")
+.addField("`$srh`",
+         "لارسال صراحة بدون اسم")
+ 
+.addField("`$srh1`",
+         "لارسال صراحة باسم ")
+         
+         .addField("`مثال`",
+         "**$srh @OSmix Single Or Taken ?** ")
+ 
+ 
+ 
+.setColor("10bbb3")
+.setFooter(`©  Toxic Codes™ `)
+message.channel.sendEmbed(embed);
+ 
+    }
+});
+
 
 
 client.login(process.env.BOT_TOKEN);
