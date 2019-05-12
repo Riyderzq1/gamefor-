@@ -456,8 +456,7 @@ client.on('message', message => {
      var prefix = "$" ;
             let anime = message.content.split(" ").slice(1).join(" ")
             if(message.content.startsWith(prefix + 'anime')) {
-                if(!anime) return message.channel.send('Please Write The Anime Name Example: !anime dragon ball')
-            getInfoFromName(anime)  
+                if(!anime) return message.channel.send('Please Write The Anime Name Example: $anime dragon ball')  
                 .then(result => {
                     let embed = new Discord.RichEmbed()
                 .setTitle(result.title)
