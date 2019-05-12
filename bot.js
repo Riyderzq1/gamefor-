@@ -520,6 +520,20 @@ client.on('message', function(message) {
 
 
 
+client.on("message", message => {
+    var prefix = "$";
+if(message.content.startsWith(prefix + "setnick")){
+if(message.author.bot || message.channel.type == "dm" || !message.member.hasPermission("MANAGE_NICKNAMES") || !message.guild.member(client.user).hasPermission("MANAGE_NICKNAMES")) return;
+var user = message.mentions.members.first();
+var args = message.content.split(" ").slice(2);
+var nick = args.join(" ");
+if(!user || !args) return message.channel.send(`**• | Usage:** ${prefix}setnick \`\`@Name\`\` nickname`);
+message.guild.member(user.user).setNickname(`${nick}`);
+message.channel.send(`Successfully changed **${user}** nickname to **${nick}**`);
+}
+});
+
+
 
 
 
