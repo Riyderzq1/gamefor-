@@ -485,5 +485,44 @@ client.on('message', message => {
 
 
 
+client.on('message' , message => {
+  var prefix = "$";
+  if(message.author.bot) return;
+  if(message.content.startsWith(prefix + "ping")) {
+ message.channel.send('Pong...').then((msg) => {
+      msg.edit(`\`\`\`javascript\nTime taken: ${msg.createdTimestamp - message.createdTimestamp} ms.\nDiscord API: ${Math.round(client.ping)} ms.\`\`\``);//حقوق دايموند كودز
+ })
+  }  
+ });
+
+
+
+
+
+
+
+
+client.on('message', function(message) {
+ var prefix = "$";
+    if(message.content.startsWith(prefix + '8r3h')) {
+        let args = message.content.split(" ").slice(1);
+        if (!args[0]) {
+            message.channel.send('**حط رقم معين يتم السحب منه**');
+            return;
+            }
+    message.channel.send(Math.floor(Math.random() * args.join(' ')));
+            if (!args[0]) {
+          message.edit('1')
+          return;
+        }
+    }
+});
+
+
+
+
+
+
+
 client.login(process.env.BOT_TOKEN);
 
