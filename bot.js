@@ -1161,5 +1161,54 @@ client.on('message', async message => {
 
 
 
+
+
+
+
+
+
+
+
+
+
+client.on('message', message => {
+      if(message.content.startsWith ("$طلاق")) {
+      if(!message.channel.guild) return message.reply('** This command only for servers **')
+      var proposed = message.mentions.members.first()
+     
+      if(!message.mentions.members.first()) return message.reply(' 😏 **لازم تمنشن وحدة **').catch(console.error);
+      if(message.mentions.users.size > 1) return message.reply(' 😳 **انت متزوج 2؟**').catch(console.error);
+       if(proposed === message.author) return message.reply(`**مراتك خنثى **`);
+        if(proposed === client.user) return message.reply(`** تبي تتطلقني **`);
+              message.channel.send(`**${proposed} 
+ انتي طالق في الثلاث يا قحبة ${message.author} 
+**`)
+
+const filter = m => m.content.startsWith("اقلب وجهك");
+message.channel.awaitMessages(filter, { max: 1, time: 15000, errors: ['time'] })
+.then(collected =>{ 
+    message.channel.send(` **${message.author} و ${proposed} الف الف مبروك الله , يرزقكم الذرية الصالحة** `);
+})
+
+   const filte = m => m.content.startsWith("لا");
+message.channel.awaitMessages(filte, { max: 1, time: 15000, errors: ['time'] })
+.then(collected =>{ 
+   message.channel.send(`  **${message.author} تم رفض عرضك** `);
+})
+        
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+
 client.login(process.env.BOT_TOKEN);
 
