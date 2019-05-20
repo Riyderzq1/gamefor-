@@ -1181,8 +1181,8 @@ client.on('message', message => {
        if(proposed === message.author) return message.reply(`**مراتك خنثى **`);
         if(proposed === client.user) return message.reply(`** تبي تتطلقني **`);
               message.channel.send(`**${proposed} 
- انتي طالق في الثلاث يا قحبة ${message.author} 
-**`)
+ انتي طالق في الثلاث  ${message.author} 
+                   **`)
 
 const filter = m => m.content.startsWith("اقلب وجهك");
 message.channel.awaitMessages(filter, { max: 1, time: 15000, errors: ['time'] })
