@@ -134,7 +134,7 @@ client.on('message',async Epic => {
       SPEAK: false
     });
     setInterval(() => {
-      c.setName(`Voice Online :  ${Epic.guild.members.filter(m => m.voiceChannel).size} .`)
+      c.setName(`⇅Riyderz [] :  ${Epic.guild.members.filter(m => m.voiceChannel).size} .`)
     },1000);
   });
   }
