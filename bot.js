@@ -127,14 +127,14 @@ client.on('message',async Epic => {
   if(Epic.content.startsWith(prefix + "vonline")) {
   if(!Epic.guild.member(Epic.author).hasPermissions('MANAGE_CHANNELS')) return Epic.reply(':x: **I Dont Have Permissions**');
   if(!Epic.guild.member(client.user).hasPermissions(['MANAGE_CHANNELS','MANAGE_ROLES_OR_PERMISSIONS'])) return Epic.reply(':x: **You Dont Have Permissions**');
-  Epic.guild.createChannel(`⇅Riyderz [] : [ ${Epic.guild.members.filter(m => m.voiceChannel).size} ]` , 'voice').then(c => {
+  Epic.guild.createChannel(`⇅Riyderz  : [ ${Epic.guild.members.filter(m => m.voiceChannel).size} ]` , 'voice').then(c => {
     console.log(`Voice Online Is Activation In ${Epic.guild.name}`);
     c.overwritePermissions(Epic.guild.id, {
       CONNECT: false,
       SPEAK: false
     });
     setInterval(() => {
-      c.setName(`⇅Riyderz [] :  ${Epic.guild.members.filter(m => m.voiceChannel).size} .`)
+      c.setName(`⇅Riyderz  :  ${Epic.guild.members.filter(m => m.voiceChannel).size} .`)
     },1000);
   });
   }
