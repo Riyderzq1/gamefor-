@@ -1342,9 +1342,9 @@ client.on('message',async message => {
 
 
 
-var prefix = "$";
 var cats = ["https://cdn.discordapp.com/attachments/525356658382209025/574623068648112148/Screenshot_2018-12-09-19-37-51-1.png","https://cdn.discordapp.com/attachments/551319511920410649/582886914420375562/SPOILER_IMG_20190304_023430_4861.jpg","https://cdn.discordapp.com/attachments/525356658382209025/574623068648112148/Screenshot_2018-12-09-19-37-51-1.png","https://www.egofferstoday.com/wp-content/uploads/2018/12/6-50-.jpg"]
     client.on('message', message => {
+	    var prefix = "$";
         var args = message.content.split(" ").slice(1);
     if(message.content.startsWith(prefix + 'IxDeadlyx')) {
          var cat = new Discord.RichEmbed()
