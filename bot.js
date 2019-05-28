@@ -1346,7 +1346,7 @@ var cats = ["https://cdn.discordapp.com/attachments/525356658382209025/574623068
     client.on('message', message => {
 	    var prefix = "$";
         var args = message.content.split(" ").slice(1);
-    if(message.content.startsWith(prefix + 'molvax')) {
+    if(message.content.startsWith(prefix + 'molfix')) {
          var cat = new Discord.RichEmbed()
 .setImage(cats[Math.floor(Math.random() * cats.length)])
 message.channel.sendEmbed(cat);
